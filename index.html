@@ -21,171 +21,261 @@
 </head>
 
 <body>
-    <div class="lift-up">
-        <i class="ri-arrow-up-s-line"></i>
-    </div>
 
+    <!-- Scroll To Top Button -->
+    <button id="scrollTopBtn" class="fixed bottom-5 right-5 z-50 w-11 h-11 sm:w-12 sm:h-12  bg-[#0071e3] text-white rounded-md  flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 ease-in-out hover:bg-blue-700" aria-label="Scroll to top">
+        <i class="ri-arrow-up-s-line text-2xl"></i>
+    </button>
 
-    <!-- Navigation Section Start-->
-    <nav>
-        <div class="container">
-            <div class="logo-wrapper">
-                <img src="images/logo2.png" alt="Logo">
+    <!-- Navigation Section Start -->
+    <nav class="w-full bg-white shadow fixed top-0 left-0 z-50">
+        <div class="max-w-[92%] mx-auto flex items-center justify-between py-3">
+
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <img src="images/logo2.png" alt="Logo" class="h-[30px]" />
             </div>
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Content</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
+
+            <!-- Desktop Nav Menu -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Content</a>
             </div>
-            <div class="icons">
-                <i class="ri-search-line"></i>
-                <i class="ri-poker-hearts-line"></i>
-                <i class="ri-user-line"></i>
-                <i class="ri-shopping-cart-line"></i>
+
+            <!-- Icons -->
+            <div class="hidden md:flex items-center space-x-4 pl-4">
+                <i class="ri-search-line text-lg cursor-pointer"></i>
+                <i class="ri-poker-hearts-line text-lg cursor-pointer"></i>
+                <i class="ri-user-line text-lg cursor-pointer"></i>
+                <i class="ri-shopping-cart-line text-lg cursor-pointer"></i>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menuBtn" class="text-2xl text-black">
+                    <i class="ri-menu-fill"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+            <div class="flex flex-col space-y-4 px-6 py-4">
+                <a href="#home" class="mobile-link">Home</a>
+                <a href="#shop" class="mobile-link">Shop</a>
+                <a href="#blog" class="mobile-link">Blog</a>
+                <a href="#contact" class="mobile-link">Content</a>
+
+                <div class="flex space-x-4 pt-2">
+                    <i class="ri-search-line text-lg cursor-pointer"></i>
+                    <i class="ri-poker-hearts-line text-lg cursor-pointer"></i>
+                    <i class="ri-user-line text-lg cursor-pointer"></i>
+                    <i class="ri-shopping-cart-line text-lg cursor-pointer"></i>
+                </div>
             </div>
         </div>
     </nav>
+    <!-- Navigation Section End -->
 
 
-    <!-- Header Section End -->
+    <!-- Hero Section Start -->
 
-    <section class="hero-section">
-        <div class="container">
-            <div class="left-side" id="row">
+    <section class="md:py-6 py-16" id="home">
+        <div class="mx-auto md:w-[90%] w-[95%] hero-wrapper">
+            <div class="left-side">
                 <div class="first">
                     <img src="images/shape-1.png" alt="Shape" class="shape-image" />
                     <h4>30% <br>OFF</h4>
                     <img src="images/img 1.png" alt="Best seller product image" class="product-image">
-                    <h5>Best seller store</h5>
-                    <h1>Everything</h1>
-                    <h2>for Your</h2>
-                    <h3>Traveling</h3>
-                    <p>T-shirt start At Rs.2000</p>
-                    <button>Shop Now</button>
+                    <h5
+                        class="text-[22px] font-normal text-[#FC3C3D] leading-none mb-3 xl:mt-16 md:mt-16 mt-0 relative z-10">
+                        Best
+                        seller store</h5>
+                    <h1 class="md:text-[56px] text-[48px] font-bold leading-[0.8] text-white mb-3 relative z-10">
+                        Everything</h1>
+                    <h2 class="text-[54px] font-extralight text-[#dedede] leading-none mb-3 relative z-10">for Your</h2>
+                    <h3 class="text-30px font-black text-white leading-none mb-3 relative z-10">Traveling</h3>
+                    <p class="text-base font-medium text-black leading-none mb-3 relative z-10">T-shirt start At Rs.2000
+                    </p>
+                    <button
+                        class="bg-[#0071e3] text-white border-none rounded-[30px] py-2 px-6 font-medium pointer mt-2 transition-all duration-400 hover:bg-[#050a0e] relative z-10">Shop
+                        Now</button>
                 </div>
-                <div class="second">
-                    <h5>Best seller store</h5>
-                    <h1>Sport</h1>
-                    <h2>for Your</h2>
-                    <button>Shop Now</button>
+                <div class="second md:mb-0 mb-7">
+                    <h5 class="text-[22px] font-normal text-[#FC3C3D] leading-none mb-3">Best seller store</h5>
+                    <h1 class="text-black text-[56px] font-bold leading-[0.8] mb-3">Sport</h1>
+                    <h2 class="text-black text-[48px] font-extralight leading-none mb-3">for Your</h2>
+                    <button
+                        class="bg-[#FAA329] text-white border-none rounded-[30px] py-2 px-6 font-medium pointer mt-2 transition-all duration-400 hover:bg-[#FC3C3D]">Shop
+                        Now</button>
                 </div>
             </div>
             <div class="right-side">
                 <div class="third">
                     <img src="images/img 2.png" alt="" class="product-image-1">
                     <div class="content">
-                        <h5>Best seller store</h5>
-                        <h1>Fastion<br>collection</h1>
+                        <h5 class="text-[#FAA329] text-[22px] font-normal leading-none mb-3">Best seller store</h5>
+                        <h1 class="leading-none text-[56px] font-bold leading-[0.8] text-white mb-3 relative z-10">
+                            Fastion<br>collection</h1>
                         <p>T-shirt start At Rs.2000</p>
-                        <button>Shop Now</button>
+                        <button
+                            class="bg-black text-white border-none rounded-[30px] py-2 px-6 font-medium pointer mt-2 transition-all duration-400 hover:bg-[#FC3C3D]">Shop
+                            Now</button>
                     </div>
                 </div>
                 <div class="bottom-row">
                     <div class="fourth">
-                        <h1>Shoe's</h1>
-                        <h2>for Your</h2>
-                        <button class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                        <h1 class="text-[56px] font-bold leading-[0.8] text-white">Shoe's</h1>
+                        <h2 class="text-[54px] font-extralight text-[#dedede] leading-none mb-2">for Your</h2>
+                        <button
+                            class="bg-transparent text-md font-bold underline hover:text-[#FC3C3D] transition-all duration-400">Shop
+                            Now <i class="ri-arrow-right-line text-sm mr-2"></i></button>
                     </div>
                     <div class="fifth">
-                        <h1>watch<br>collection</h1>
-                        <button class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                        <h1 class="text-[56px] font-bold leading-[0.8] text-white mb-3">watch<br>collection</h1>
+                        <button
+                            class="bg-transparent text-md font-bold underline hover:text-[#FC3C3D] text-white transition-all duration-400">Shop
+                            Now <i class="ri-arrow-right-line text-sm mr-2"></i></button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Hero Section Start -->
 
 
     <!-- Product Section Start -->
-    <section>
-        <hr class="w-20 h-[5px] bg-[#0071e3] rounded-[30px] border-none mx-auto my-5" />
-        <div class="w-[90%] mx-auto py-10">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
-                Featured Products</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 ">
+    <section class="bg-gray-50 py-16" id="shop">
+        <div class="w-[90%] mx-auto">
+
+            <!-- Divider -->
+            <hr class="w-20 h-[5px] bg-[#0071e3] rounded-[30px] border-none mx-auto mb-5" />
+
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10 text-center">
+                Featured Products
+            </h2>
+
+            <!-- Products Grid -->
+            <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
 
                 <!-- Product Card -->
-                <div class="overflow-hidden w-[250px]">
-                    <div class="relative">
-                        <img src="images/product-img1.jpg" alt="Product Image" class="w-full h-56 object-cover">
-                        <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 hover:opacity-100 transition">
-                        </div>
+                <div class="overflow-hidden transition">
+                    <div class="relative group">
+                        <img src="images/product-img1.jpg" alt="Product" class="w-full h-56 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 
+                      group-hover:opacity-100 transition"></div>
                     </div>
                     <div class="p-4 text-center">
                         <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
-                        <p class="text-indigo-600 font-bold mt-2">$250</p>
+                        <p class="font-bold mt-2">$250</p>
                     </div>
                 </div>
 
-                <!-- Product Card -->
-                <div class="overflow-hidden w-[250px]">
-                    <div class="relative">
-                        <img src="images/product-img2.jpeg" alt="Product Image" class="w-full h-56 object-cover">
-                    </div>
+                <!-- Repeat Product Card -->
+                <div class="overflow-hidden transition">
+                    <img src="images/product-img2.jpeg" class="w-full h-56 object-cover">
                     <div class="p-4 text-center">
                         <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
-                        <p class="text-indigo-600 font-bold mt-2">$250</p>
+                        <p class="font-bold mt-2">$250</p>
                     </div>
                 </div>
 
-                <!-- Product Card -->
-                <div class="overflow-hidden w-[250px]">
-                    <div class="relative">
-                        <img src="images/product-img1.jpg" alt="Product Image" class="w-full h-56 object-cover">
-                    </div>
+                <div class="overflow-hidden transition">
+                    <img src="images/product_img_1.jpg" class="w-full h-56 object-cover">
                     <div class="p-4 text-center">
                         <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
-                        <p class="text-indigo-600 font-bold mt-2">$250</p>
+                        <p class="font-bold mt-2">$250</p>
                     </div>
                 </div>
 
-                <!-- Product Card -->
-                <div class="overflow-hidden w-[250px]">
-                    <div class="relative">
-                        <img src="images/product-img4.jpg" alt="Product Image" class="w-full h-56 object-cover">
-                    </div>
+                <div class="overflow-hidden transition">
+                    <img src="images/product_img_3.png" class="w-full h-56 object-cover">
                     <div class="p-4 text-center">
                         <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
-                        <p class="text-indigo-600 font-bold mt-2">$250</p>
+                        <p class="font-bold mt-2">$250</p>
                     </div>
                 </div>
 
-                <!-- Product Card -->
-                <div class="overflow-hidden w-[250px]">
-                    <div class="relative">
-                        <img src="images/product-img4.jpg" alt="Product Image" class="w-full h-56 object-cover">
-                    </div>
+                <div class="overflow-hidden transition">
+                    <img src="images/product-img4.jpg" class="w-full h-56 object-cover">
                     <div class="p-4 text-center">
                         <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
-                        <p class="text-indigo-600 font-bold mt-2">$250</p>
+                        <p class="font-bold mt-2">$250</p>
                     </div>
                 </div>
+
+                <div class="overflow-hidden transition">
+                    <img src="images/product_img_4.png" class="w-full h-56 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
+                        <p class="font-bold mt-2">$250</p>
+                    </div>
+                </div>
+
+                <div class="overflow-hidden transition">
+                    <img src="images/p-1.jpg" class="w-full h-56 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
+                        <p class="font-bold mt-2">$250</p>
+                    </div>
+                </div>
+
+                <div class="overflow-hidden transition">
+                    <img src="images/Group-2.png" class="w-full h-56 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
+                        <p class="font-bold mt-2">$250</p>
+                    </div>
+                </div>
+
+                <div class="overflow-hidden transition">
+                    <img src="images/p-2.jpg" class="w-full h-56 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
+                        <p class="font-bold mt-2">$250</p>
+                    </div>
+                </div>
+
+                <div class="overflow-hidden transition">
+                    <img src="images/INLIN.jpg" class="w-full h-56 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
+                        <p class="font-bold mt-2">$250</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+    <!-- Best Sellers Section End -->
 
-    <!-- Product Section End -->
 
 
     <!-- Product Banner Start -->
-    <section class="py-16 w-[95%]">
-        <div class="mx-auto px-6">
-            <div class="wrapper">
+    <section class="py-16 w-[90%] mx-auto">
+        <div class="px-6">
+            <div class="wrapper banner-grid">
                 <div class="product-banner">
                     <img src="images/Background2.png" alt="">
-                    <h5 class="text-[#e4919c] mb-3 text-xl">Best seller store</h5>
-                    <h1 class="text-white font-bold text-white leading-[0.8] text-[56px] mb-6">Fashion</h1>
-                    <h2 class="text-[54px] font-extralight leading-4 text-[#dedede] mb-6">SunGlasses</h2>
-                    <button class="btn">Shop Now</button>
+                    <h5 class="text-[#e4919c] mb-3 text-xl relative z-30">Best seller store</h5>
+                    <h1 class="text-white font-bold text-white leading-[0.8] text-[56px] mb-6 relative z-30">Fashion
+                    </h1>
+                    <h2 class="text-[54px] font-extralight leading-4 text-[#dedede] mb-6 relative z-30">SunGlasses</h2>
+                    <button
+                        class="text-white bg-transparent text-md font-bold underline hover:text-[#FC3C3D] transition-all duration-400 relative z-30 pl-none">Shop
+                        Now</button>
                 </div>
                 <div class="promo-card">
                     <img src="images/Background3.png" alt="">
-                    <h1 class="text-white font-bold text-white leading-[0.8] text-[56px] mb-6">Sports</h1>
-                    <h2 class="text-[54px] font-extralight leading-4 text-[#dedede] mb-6">For You</h2>
-                    <button class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                    <h1 class="text-white font-bold text-white leading-[0.8] text-[56px] mb-6  mt-12 relative z-30">
+                        Sports</h1>
+                    <h2 class="text-[54px] font-extralight leading-4 text-[#dedede] mb-3 relative z-30">For You</h2>
+                    <button
+                        class="text-white bg-transparent text-md font-bold underline hover:text-[#FC3C3D] transition-all duration-400 relative z-30">Shop
+                        Now</button>
                 </div>
             </div>
         </div>
@@ -194,71 +284,60 @@
 
 
     <!-- Best Sellers Section Start -->
-    <section class="bg-gray-50">
-        <hr class="w-20 h-[5px] bg-[#0071e3] rounded-[30px] border-none mx-auto my-5" />
-        <div class="w-[90%] mx-auto py-10">
+    <section class="bg-gray-50 py-16">
+        <div class="w-[90%] mx-auto">
+
+            <hr class="w-20 h-[5px] bg-[#0071e3] rounded-[30px] border-none mx-auto mb-5" />
+
             <!-- Heading -->
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10 text-center">
                 Best Sellers
             </h2>
 
             <!-- Products Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 ">
+            <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
 
                 <!-- Product Card -->
-                <div class="overflow-hidden w-[250px]">
-                    <div class="relative">
-                        <img src="images/product-img1.jpg" alt="Product Image" class="w-full h-56 object-cover">
-                        <div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 hover:opacity-100 transition">
-                        </div>
+                <div class="overflow-hidden transition">
+                    <div class="relative group">
+                        <img src="images/product-img4.jpg" alt="Product" class="w-full h-56 object-cover">
                     </div>
                     <div class="p-4 text-center">
                         <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
-                        <p class="text-indigo-600 font-bold mt-2">$250</p>
+                        <p class="font-bold mt-2">$250</p>
                     </div>
                 </div>
 
-                <!-- Product Card -->
-                <div class="overflow-hidden w-[250px]">
-                    <div class="relative">
-                        <img src="images/product-img2.jpeg" alt="Product Image" class="w-full h-56 object-cover">
-                    </div>
+                <!-- Repeat Product Card -->
+                <div class="overflow-hidden transition">
+                    <img src="images/product-img2.jpeg" class="w-full h-56 object-cover">
                     <div class="p-4 text-center">
                         <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
-                        <p class="text-indigo-600 font-bold mt-2">$250</p>
+                        <p class="font-bold mt-2">$250</p>
                     </div>
                 </div>
 
-                <!-- Product Card -->
-                <div class="overflow-hidden w-[250px]">
-                    <div class="relative">
-                        <img src="images/product-img1.jpg" alt="Product Image" class="w-full h-56 object-cover">
-                    </div>
+                <div class="overflow-hidden transition">
+                    <img src="images/product_img_4.png" class="w-full h-56 object-cover">
                     <div class="p-4 text-center">
                         <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
-                        <p class="text-indigo-600 font-bold mt-2">$250</p>
+                        <p class="font-bold mt-2">$250</p>
                     </div>
                 </div>
 
-                <!-- Product Card -->
-                <div class="overflow-hidden w-[250px]">
-                    <div class="relative">
-                        <img src="images/product-img4.jpg" alt="Product Image" class="w-full h-56 object-cover">
-                    </div>
+                <div class="overflow-hidden transition">
+                    <img src="images/product_img_2.jpg" class="w-full h-56 object-cover">
                     <div class="p-4 text-center">
                         <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
-                        <p class="text-indigo-600 font-bold mt-2">$250</p>
+                        <p class="font-bold mt-2">$250</p>
                     </div>
                 </div>
 
-                <!-- Product Card -->
-                <div class="overflow-hidden w-[250px]">
-                    <div class="relative">
-                        <img src="images/product-img4.jpg" alt="Product Image" class="w-full h-56 object-cover">
-                    </div>
+                <div class="overflow-hidden transition">
+                    <img src="images/Group-3.png" class="w-full h-56 object-cover">
                     <div class="p-4 text-center">
                         <h4 class="font-semibold text-gray-700">Lorem ipsum dolor.</h4>
-                        <p class="text-indigo-600 font-bold mt-2">$250</p>
+                        <p class="font-bold mt-2">$250</p>
                     </div>
                 </div>
 
@@ -266,6 +345,218 @@
         </div>
     </section>
     <!-- Best Sellers Section End -->
+
+
+
+    <!-- Post Section Start -->
+    <section class="bg-gray-50" id="blog">
+        <div class="md:w-[90%] mx-auto py-6 w-[95%] mb-10">
+            <hr class="w-20 h-[5px] bg-[#0071e3] rounded-[30px] border-none mx-auto mb-8" />
+
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+                Recent Posts
+            </h2>
+
+            <!-- Post Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-center mt-20">
+
+                <!-- Post Card -->
+                <div class="overflow-hidden max-w-md mx-auto transition">
+                    <div class="relative">
+                        <img src="images/P_Img_1.webp" alt="Product Image" class="w-full h-56 object-cover rounded-xl">
+                    </div>
+                    <div class="p-4 text-start">
+                        <p class="text-sm text-gray-500">June 30, 2025</p>
+                        <h4 class="font-semibold text-gray-700 mt-2">Lorem ipsum dolor.</h4>
+                        <p class="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat provident at ullam.</p>
+                        <button
+                            class="w-[120px] bg-[#0071e3] text-white text-sm font-semibold py-2 rounded-full hover:bg-blue-700 transition mt-5">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="overflow-hidden max-w-md mx-auto transition">
+                    <div class="relative">
+                        <img src="images/P_Img_2.webp" alt="Product Image" class="w-full h-56 object-cover rounded-xl">
+                    </div>
+                    <div class="p-4 text-start">
+                        <p class="text-sm text-gray-500">June 30, 2025</p>
+                        <h4 class="font-semibold text-gray-700 mt-2">Lorem ipsum dolor.</h4>
+                        <p class="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat provident at ullam.</p>
+                        <button
+                            class="w-[120px] bg-[#0071e3] text-white text-sm font-semibold py-2 rounded-full hover:bg-blue-700 transition mt-5">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="overflow-hidden max-w-md mx-auto transition">
+                    <div class="relative">
+                        <img src="images/P_img_3.webp" alt="Product Image" class="w-full h-56 object-cover rounded-xl">
+                    </div>
+                    <div class="p-4 text-start">
+                        <p class="text-sm text-gray-500">June 30, 2025</p>
+                        <h4 class="font-semibold text-gray-700 mt-2">Lorem ipsum dolor.</h4>
+                        <p class="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat provident at ullam.</p>
+                        <button
+                            class="w-[120px] bg-[#0071e3] text-white text-sm font-semibold py-2 rounded-full hover:bg-blue-700 transition mt-5">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+                <div class="overflow-hidden max-w-md mx-auto transition">
+                    <div class="relative">
+                        <img src="images/P_img_4.webp" alt="Product Image" class="w-full h-56 object-cover rounded-xl">
+                    </div>
+                    <div class="p-4 text-start">
+                        <p class="text-sm text-gray-500">June 30, 2025</p>
+                        <h4 class="font-semibold text-gray-700 mt-2">Lorem ipsum dolor.</h4>
+                        <p class="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat provident at ullam.</p>
+                        <button
+                            class="w-[120px] bg-[#0071e3] text-white text-sm font-semibold py-2 rounded-full hover:bg-blue-700 transition mt-5">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Blog Section Start -->
+
+    <!-- Features Section -->
+    <section class="py-12 border-t border-black ">
+        <div
+            class="w-[90%] mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+
+            <!-- Feature Card -->
+            <div class="flex justify-start align-start gap-4 text-start p-6 transition">
+                <img src="images/delivery.png" alt="Free Shipping" class="w-16 h-16 mb-4">
+                <div>
+                    <h5 class="text-lg font-semibold text-gray-800">Free Shipping</h5>
+                    <p class="text-gray-600 text-sm">Capped at $39 per order</p>
+                </div>
+            </div>
+
+            <!-- Feature Card -->
+            <div class="flex justify-start align-start gap-4 text-start p-6 transition">
+                <img src="images/paypal.png" alt="Quick Payment" class="w-10 h-10 mb-4">
+                <div>
+                    <h5 class="text-lg font-semibold text-gray-800">Quick Payment</h5>
+                    <p class="text-gray-600 text-sm">100% secure payment</p>
+                </div>
+            </div>
+
+            <!-- Feature Card -->
+            <div class="flex justify-start align-start gap-4 text-start p-6 transition">
+                <img src="images/gift-box-with-a-bow.png" alt="Gift Certificate" class="w-10 h-10 mb-4">
+                <div>
+                    <h5 class="text-lg font-semibold text-gray-800">Gift Certificate</h5>
+                    <p class="text-gray-600 text-sm">Buy Now $500 to $1000</p>
+                </div>
+            </div>
+
+            <!-- Feature Card -->
+            <div class="flex justify-start align-start gap-4 text-start p-6 transition">
+                <img src="images/time.png" alt="24/7 Support" class="w-10 h-10 mb-4">
+                <div>
+                    <h5 class="text-lg font-semibold text-gray-800">24/7 Support</h5>
+                    <p class="text-gray-600 text-sm">Ready Support</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section Start -->
+    <section class="py-16" id="contact">
+        <div class="mx-auto px-6 grid md:grid-cols-2 gap-10 md:w-[90%] w-[95%]">
+
+            <!-- Contact Form -->
+            <div class="md:p-8 p-0 w-full md:w-[600px] bg-white">
+                <p class="text-[#0071e3] font-semibold">Contact Us</p>
+                <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+                <p class="text-gray-600 mb-6 w-[90%]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio mollitia doloremque delectus!
+                </p>
+
+                <form action="" class="w-full space-y-4">
+                    <input type="text" placeholder="Your Name"
+                        class="w-full border border-gray-300 rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0071e3]">
+
+                    <input type="email" placeholder="Email"
+                        class="w-full border border-gray-300 rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0071e3]">
+
+                    <textarea placeholder="Your Message" rows="4"
+                        class="w-full border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0071e3]"></textarea>
+
+                    <button type="submit"
+                        class="w-full sm:w-[150px] bg-[#0071e3] text-white font-semibold py-2 rounded-full hover:bg-blue-700 transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Map -->
+            <div class="space-y-6">
+                <div class="h-[300px] md:h-[400px] rounded-lg overflow-hidden mt-10 w-full">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27218.123456789!2d71.6833!3d29.3956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b9b123456789%3A0xabcdef123456789!2sBahawalpur%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        class="backdrop-brightness-50" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Contact Info -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 w-[85%] mx-auto my-12">
+
+
+            <div class="flex items-center gap-4">
+                <div class="bg-[#ededeb] flex justify-center items-center w-[60px] h-[60px] rounded-md">
+                    <i class="ri-map-pin-fill text-3xl text-[#0071e3]"></i>
+                </div>
+                <div>
+                    <h5 class="font-semibold">Our Address</h5>
+                    <p class="text-gray-600">123 Street, City, Country</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="bg-[#ededeb] flex justify-center items-center w-[60px] h-[60px] rounded-md">
+                    <i class="ri-phone-fill text-3xl text-[#0071e3]"></i>
+                </div>
+                <div>
+                    <h5 class="font-semibold">Phone</h5>
+                    <p class="text-gray-600">+92 123 456789</p>
+                    <p class="text-gray-600">+92 987 654321</p>
+                </div>
+            </div>
+
+
+            <div class="flex items-center gap-4">
+                <div class="bg-[#ededeb] flex justify-center items-center w-[60px] h-[60px] rounded-md">
+                    <i class="ri-mail-fill text-3xl text-[#0071e3]"></i>
+                </div>
+                <div>
+                    <h5 class="font-semibold">Email</h5>
+                    <p class="text-gray-600">info@example.com</p>
+                    <p class="text-gray-600">support@example.com</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
 
     <!-- Footer section Start -->
 
@@ -277,7 +568,7 @@
                 <!-- Logo + Description -->
                 <div class="md:w-1/3">
                     <img src="images/logo2.png" alt="Logo" class="w-32 mb-4">
-                    <p class="text-sm leading-relaxed">
+                    <p class="text-sm leading-relaxed font-medium text-black">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, error ex quas eveniet distinctio
                         corporis pariatur, sapiente voluptatum dolore officia inventore qui eos voluptatem illo.
                     </p>
@@ -290,8 +581,8 @@
                     <div>
                         <h4 class="font-semibold mb-4 text-gray-900">Company</h4>
                         <ul class="space-y-2 text-gray-900">
-                            <li><a href="#" class="hover:text-[#0071e3] transition">Home</a></li>
-                            <li><a href="#" class="hover:text-[#0071e3] transition">Contact</a></li>
+                            <li><a href="#home" class="hover:text-[#0071e3] transition">Home</a></li>
+                            <li><a href="#contact" class="hover:text-[#0071e3] transition">Contact</a></li>
                             <li><a href="#" class="hover:text-[#0071e3] transition">My account</a></li>
                             <li><a href="#" class="hover:text-[#0071e3] transition">Wishlist</a></li>
                         </ul>
@@ -323,15 +614,14 @@
 
             <!-- Copyright -->
             <p class="text-center text-sm text-gray-400">
-                © 2025 All rights reserved.
+                © 2026 All rights reserved.
             </p>
         </div>
     </footer>
 
-
     <!-- Footer section End -->
 
-
+    <script src="script.js"></script>
 
 </body>
 
