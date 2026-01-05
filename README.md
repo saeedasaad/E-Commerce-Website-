@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a responsive **E-Commerce Website Landing Page** developed.
+This project is a responsive **E-Commerce Website Landing Page** developed...
 
 The goal of this project is to demonstrate frontend development skills, UI/UX understanding, responsiveness, and clean code structure by building a professional landing page using modern frontend technologies.
 
